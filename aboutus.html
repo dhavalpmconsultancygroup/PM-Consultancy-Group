@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Consultancy Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #082c3c;
+            background-color: #F8FAFC;
+        }
+        header {
+    background-color: #082c3c;
+    color: #ffffff;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Adjust for padding */
+    box-sizing: border-box; /* This is important */
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 100px; /* Adjust this value to match your desired logo height */
+    width: auto;
+}
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+	    flex-wrap: nowrap;
+        }
+        nav ul li {
+            margin: 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #082c3c;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer .footer-section {
+            margin: 10px;
+        }
+        footer .footer-section h4 {
+            margin-bottom: 10px;
+        }
+        footer .footer-section a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        footer .footer-section a:hover {
+            text-decoration: underline;
+        }
+        footer .newsletter {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        footer .newsletter input {
+            padding: 8px;
+            width: 300px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        footer .newsletter button {
+            background-color: #ffffff;
+            color: #082c3c;
+            border: 1px solid #082c3c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer .newsletter button:hover {
+            background-color: #082c3c;
+            color: white;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        /* About Section Styles */
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 40px;
+            background-color: #ffffff;
+            gap: 40px;
+            overflow: hidden;
+        }
+        .about-text {
+            flex: 1;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        .about-image {
+            flex: 1;
+            text-align: right;
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        .about-image img {
+            width: 80%;
+            max-width: 400px;
+            border: 5px solid #082c3c;
+            border-radius: 8px;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="logo-image">
+	<img src="./PM_Logo3.png" alt="PM Consultancy Group Logo" class="logo-image">
+</div>
+        <nav>
+            <ul>
+                <li><a href="experiment2.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <!-- <li><a href="markets.html">Markets</a></li> -->
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="about-section" id="about">
+            <div class="about-text">
+                <h1>PM Consultancy Group: Premier Construction Management in NYC & Long Island</h1>
+    <p>
+        PM Consultancy Group stands as New York City's trusted leader in construction management services, delivering exceptional results for both residential and commercial projects. As a top-rated construction consulting firm, we transform your vision into reality through our signature approach: Efficient. Reliable. Exceptional.
+    </p>
+    
+    <h2>Comprehensive Construction Management Excellence</h2>
+    <p>
+        Our elite team of construction professionals brings years of combined experience in:
+        <ul>
+            <li>High-rise residential construction management</li>
+            <li>Commercial building project oversight</li>
+            <li>Mixed-use development coordination</li>
+            <li>Construction cost optimization</li>
+            <li>Advanced project scheduling</li>
+            <li>Risk management and mitigation</li>
+            <li>Real Estate Development</li>
+        </ul>
+    </p>
+    
+    <h2>The PM Consultancy Group Advantage</h2>
+    <p>
+        What distinguishes PM Consultancy Group in NYC's competitive construction landscape? Our proven methodology combines:
+        <ul>
+            <li>Data-driven project management strategies</li>
+            <li>Real-time construction monitoring systems</li>
+            <li>Advanced cost control techniques</li>
+            <li>Innovative scheduling solutions</li>
+            <li>Comprehensive quality assurance protocols</li>
+        </ul>
+    </p>
+    
+    <h2>Client-Focused Construction Solutions</h2>
+    <p>
+        We don't just manage construction projects – we build lasting partnerships. Our client-centric approach ensures:
+        <ul>
+            <li>Transparent project communication</li>
+            <li>Regular progress updates</li>
+            <li>Proactive risk management</li>
+            <li>Strategic cost optimization</li>
+            <li>On-time project delivery</li>
+            <li>Budget adherence</li>
+        </ul>
+    </p>
+    
+    <h2>Why Choose PM Consultancy Group?</h2>
+    <p>
+        <strong>Unmatched Expertise in NYC Construction</strong><br>
+        Successfully managed multiple projects across the Greater New York City area.<br>
+        Specialized knowledge of NYC building codes and regulations.<br>
+        Deep understanding of local construction market dynamics.<br>
+        Strong relationships with top contractors and suppliers.
+    </p>
+    <p>
+        <strong>Customized Project Solutions</strong><br>
+        Tailored management strategies for each project.<br>
+        Flexible service packages to match your needs.<br>
+        Scalable solutions for projects of any size.<br>
+        Industry-leading project control systems.
+    </p>
+    <p>
+        <strong>Professional Excellence</strong><br>
+        Highly skilled leadership.<br>
+        Certified construction management professionals from USA and India.<br>
+        Ongoing team training and development.<br>
+        Advanced technology integration.
+    </p>
+    
+    <h2>Your Trusted Construction Partner in NYC</h2>
+    <p>
+        Looking for construction management services in the greater New York City area? PM Consultancy Group delivers projects that exceed expectations through:
+        <ul>
+            <li>Strategic pre-construction planning</li>
+            <li>Precise budget management</li>
+            <li>Advanced scheduling techniques</li>
+            <li>Rigorous quality control</li>
+            <li>Comprehensive project oversight</li>
+        </ul>
+    </p>
+    
+    <h2>Start Your Construction Journey</h2>
+    <p>
+        Contact PM Consultancy Group today to schedule your consultation. Discover how New York's leading construction management firm can bring your construction vision to life - on time, within budget, and beyond expectations.
+    </p>
+            </div>
+            <div class="about-image">
+                <img src="./PM Logo_Color.jpg" alt="About PM Consultancy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Name: Dhaval Limbachiya</p>
+            <p>Email: <a href="mailto:dhaval@pmconsultancy.com">dhaval@pmconsultancy.com</a></p>
+        </div>
+        <div class="newsletter">
+            <h4>Newsletter</h4>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email ID">
+                <input type="text" placeholder="Phone Number (Optional)">
+                <button>Sign Up for Newsletter</button>
+            </form>
+        </div>
+        <!-- <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div> -->
+        <div class="copyright">© 2024 PM Consultancy Group. All rights reserved.</div>
+    </footer>
+
+    <script>
+        // Intersection Observer for Scroll Animation
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        document.querySelectorAll('.about-text, .about-image').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

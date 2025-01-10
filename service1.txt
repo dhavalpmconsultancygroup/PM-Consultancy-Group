@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - PM Consultancy Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #082c3c;
+            background-color: #F8FAFC;
+        }
+        header {
+            background-color: #082c3c;
+            color: #ffffff;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .logo-image {
+            height: 100px;
+            width: auto;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        nav ul li {
+            margin: 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #082c3c;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer .footer-section {
+            margin: 10px;
+        }
+        footer .footer-section h4 {
+            margin-bottom: 10px;
+        }
+        footer .footer-section a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        footer .footer-section a:hover {
+            text-decoration: underline;
+        }
+        footer .newsletter {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        footer .newsletter input {
+            padding: 8px;
+            width: 300px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        footer .newsletter button {
+            background-color: #ffffff;
+            color: #082c3c;
+            border: 1px solid #082c3c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer .newsletter button:hover {
+            background-color: #082c3c;
+            color: white;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Services Section Styles */
+        .services-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px;
+            background-color: #ffffff;
+        }
+        .services-box {
+            background-color: #d3d3d3;
+            border: 2px solid #082c3c;
+            border-radius: 8px;
+            padding: 40px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .services-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('vector-art.png'); /* Replace with your vector art path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.1;
+            z-index: 0;
+            border-radius: 8px;
+        }
+        .services-box > * {
+            position: relative;
+            z-index: 1;
+        }
+        .services-box h1 {
+            color: #082c3c;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .services-box p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .services-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services-box ul li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-image">
+            <img src="C:\Users\Janak Limbachia\OneDrive\Desktop\PM Consultancy Group\PM_Logo3.png" alt="PM Consultancy Group Logo" class="logo-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="experiment2.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="markets.html">Markets</a></li>
+                <li><a href="#contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="services-section" id="services">
+            <div class="services-box">
+                <h1>Our Services</h1>
+                <p>PM Consultancy Group offers a wide range of construction management services tailored to meet the unique needs of our clients. Our expertise ensures projects are delivered on time, within budget, and to the highest quality standards.</p>
+                <ul>
+                    <li>High-rise residential construction management</li>
+                    <li>Commercial building project oversight</li>
+                    <li>Mixed-use development coordination</li>
+                    <li>Advanced project scheduling</li>
+                    <li>Risk management and mitigation</li>
+                    <li>Construction cost optimization</li>
+                    <li>Real Estate Development</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Name: Dhaval Limbachiya</p>
+            <p>Email: <a href="mailto:dhaval@pmconsultancy.com">dhaval@pmconsultancy.com</a></p>
+        </div>
+        <div class="newsletter">
+            <h4>Newsletter</h4>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email ID">
+                <input type="text" placeholder="Phone Number (Optional)">
+                <button>Sign Up for Newsletter</button>
+            </form>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <div class="copyright">&copy; 2024 PM Consultancy Group. All rights reserved.</div>
+    </footer>
+</body>
+</html>
